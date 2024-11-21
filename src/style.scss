@@ -1,5 +1,5 @@
 // Intro Logo Page
-
+@use "animations.scss";
 .logo-wrapper {
   font-family: "Open Sans", sans-serif;
   display: flex;
@@ -19,20 +19,12 @@
   }
 }
 
-@keyframes grow {
-  from {
-    transform: scale(0);
-    opacity: 0;
-  }
 
-  to {
-    transform: scale(1.5);
-    opacity: 1;
-  }
-}
 
+// On-boarding Page
 
 .main-onboarding {
+  animation: fadeIn 1s ease-in;
   max-width: 720px;
   min-height: 100vh;
   margin: auto;
@@ -76,13 +68,17 @@
   background-color: #c7c7c7;
   border-radius: 50%;
   display: inline-block;
+  transition: all 0.3s ease;
 
   &.fill {
     background-color: #4D861F;
     width: 75px;
     border-radius: 16px;
+    animation: swipe 0.3s ease-in-out;
   }
 }
+
+
 
 .text {
   width: 300px;
@@ -139,6 +135,7 @@
 
 // Login Page
 .login-wrapper {
+  animation: fadeIn 1s ease-in;
   font-family: "Open Sans", sans-serif;
   text-align: center;
   max-width: 720px;
@@ -215,6 +212,7 @@
 
 .settings {
   &-wrapper {
+    animation: fadeIn 1s ease-in;
     font-family: "Open Sans", sans-serif;
     text-align: center;
     display: flex;
@@ -229,7 +227,26 @@
     h1 {
       color: #4d861f;
     }
+
+    &-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5em;
+
+      img {
+        width: 20px;
+      }
+
+      p {
+        font-weight: bold;
+        font-size: 24px;
+      }
+    }
   }
+
+
+
 }
 
 .section-settings {
@@ -277,7 +294,7 @@
 
   &-version-text {
     font-size: 12px;
-    color: #575757;
+    color: #A5A5A5;
   }
 }
 
@@ -348,8 +365,14 @@ input:checked+.slider:before {
       list-style: none;
       margin: 0;
       padding: 0;
-
-      li {
+          }
+    
+          a {
+            text-decoration: none;
+            color: inherit;
+          }
+    
+      li{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -359,6 +382,7 @@ input:checked+.slider:before {
         i {
           font-size: 1.5rem;
           margin-bottom: 5px;
+
         }
 
         &.active {
@@ -367,4 +391,115 @@ input:checked+.slider:before {
       }
     }
   }
+
+
+
+// Dark Mode
+
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+
+  .logo-wrapper{
+    h1{
+      color: white;
+    }
+  }
+
+  .main-onboarding{
+    background-color: #1a1a1a;
+    color: white;
+
+    .imagewindow{
+      .dark-mode-img1 {
+              content: url("../src/pic/Onboarding\ 2\ darkmode.png");
+            }
+      .dark-mode-img2{
+        content: url("../src/pic/Onboarding\ 3\ darkmode.png");
+      }
+      .dark-mode-img3{
+        content: url("../src/pic/Onboarding\ 4\ darkmode.png");
+      }
+    }
+    .text {
+      h3, p {
+        color: #ffffff;
+      }
+    }
+    .dots {
+      .dot {
+        &.active {
+          background-color: #4d861f;
+        }
+      }
+    }
+
+    .page-control {
+       .next {
+        color: #ffffff;
+        border: 1px solid #4d4d4d;
+      }
+      .prev {
+        background-color: #1a1a1a;
+      }
+    }
+
+  }
+
+    // Login Page
+    .login-wrapper {
+      background-color: #1a1a1a;
+    }
+  
+    .login-welcome-text {
+      color: #ffffff;
+    }
+  
+    .login-main-button-facebook,
+    .login-main-button-google{
+      background-color: #2d2d2d;
+      color: #ffffff;
+      border: 1px solid #4d4d4d;
+    }
+  
+    .login-main-border-or-line {
+      border-color: #4d4d4d;
+     
+      
+      span {
+        background-color: #1a1a1a;
+        color: #ffffff;
+      }
+    }
+  
+    .login-main-signup-link {
+      color: #ffffff;
+      
+      a {
+        color: #4d861f;
+      }
+    }
+  
+
+    
+  .footer-navbar {
+    background-color: #1a1a1a;
+    box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.2);
+  }
+
+// Settings Page
+  i {
+    color: #ffffff !important;
+  }
+
+  .fa-gear {
+    color: #4D861F !important;
+  }
+
+  .section-settings-darkmode-button {
+    background-color: #1a1a1a;
+
+  }
+
+  
 }
