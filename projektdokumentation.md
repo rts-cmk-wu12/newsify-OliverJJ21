@@ -53,7 +53,7 @@ Jeg har installeret følgende node-pakker i mit projekt:
 
 <!-- (Hvad gik godt. Hvor prioriterede du forkert. Klagesange fra de varme lande om halvfærdigt produkt, på grund af manglende nattesøvn, fordi din kæle-skildpadde havde tandpine er IKKE interessante.) -->
 
-Jeg syntes jeg har gjort et godt stykke arbejde fordi jeg har fået ramt det korrekte design i følge Figma filen rimelig godt. Jeg har brugt en del tid på at lave det hele og det har været fedt at lave det. Specielt fordi i starten så det lidt ud som om det var meget man skulle nå på 1 uge men da man så fik kommet igang var det egentligt helt fint. Man havde ihvertfald noget at lave hele tiden.
+Jeg syntes jeg har gjort et godt stykke arbejde selvom jeg ikke nåede at blive 100% færdig, fordi jeg har fået ramt det korrekte design i følge Figma filen rimelig godt. Jeg har brugt en del tid på at lave det hele og det har været fedt at lave det. Specielt fordi i starten så det lidt ud som om det var meget man skulle nå på 1 uge men da man så fik kommet igang var det egentligt helt fint. Man havde ihvertfald noget at lave hele tiden.
 
 ---
 ### En beskrivelse af særlige punkter til bedømmelse
